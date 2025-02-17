@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block title %}Contact{% endblock %}
+
+<div class="container">
+    {% block content %}
+    <h1>Welcome to Contact Page</h1>
+    <h3>This My info:</h3>
+    <ul>
+        
+        {% for item in info  %}
+        <li>{{ item }}</li>   
+        {% endfor %}
+            
+    </ul>
+
+    <h4>This is my email: {{ email}}</h4>
+
+    {% endblock %}
+</div>

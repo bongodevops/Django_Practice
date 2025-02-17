@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block title %}About{% endblock %}
+<div class="container">
+    {% block content %}
+    <h1>Welcome to About Page</h1>
+    <h1>My Name Is : {{ Name | lower }}</h1>
+    <p>{{ title }}</p>
+    {% endblock %}
+</div>
